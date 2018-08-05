@@ -34,6 +34,8 @@ public class testMain {
         Map<Integer,Integer> newMap = new HashMap<>();
         newMap.putAll(map1);
 
+
+        //zhushi
         newMap=putAllMap(newMap,map2);
         newMap=putAllMap(newMap,map3);
 
