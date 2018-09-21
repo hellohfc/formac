@@ -71,5 +71,9 @@ public class testMain {
 
         return newMap;
     }
+
+    public String sayHello(){
+        return "hello";
+    }
 }
 
