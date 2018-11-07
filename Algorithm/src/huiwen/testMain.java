@@ -4,10 +4,10 @@ package huiwen;
  * @author fuchun.hu@hand-china.com(胡馥春)
  * @version 1.0
  * @name testMain
- * @description://评测题目: 在30分钟内,用java语言写一段程序,
-                //从一段字符串中,把所有长度大于8的回文子串打印出来,
-                //回文串指正向或反向读都一样(例如ABA,1221).
-                //如能使用时间复杂度更优的算法则有加分    34554343345345
+ * @description://评测题目: 在30分钟内, 用java语言写一段程序,
+ * //从一段字符串中,把所有长度大于8的回文子串打印出来,
+ * //回文串指正向或反向读都一样(例如ABA,1221).
+ * //如能使用时间复杂度更优的算法则有加分    34554343345345
  * @date 2018/6/3
  */
 public class testMain {
@@ -21,11 +21,9 @@ public class testMain {
             System.out.println("不是回文");
         }*/
 
-
         System.out.println(t.maxPalindrome2("google"));
 
     }
-
 
     /**
      * 判断是否为回文1
@@ -56,6 +54,7 @@ public class testMain {
 
     /**
      * 判断字符串是否为回文2
+     *
      * @param str
      * @return
      */
@@ -77,24 +76,24 @@ public class testMain {
         return flag;
     }
 
-
     /**
      * 获取字符串中最长的回文
+     *
      * @param str
      * @return
      */
-    public String maxPalindrome2(String str){
+    public String maxPalindrome2(String str) {
 
-        String newPalindrome="";
+        String newPalindrome = "";
 
-        int max=0;
+        int max = 0;
 
-        for(int i=0;i<str.length();i++){
-            for(int j=str.length()-1;j>i;j--){
-                String s = str.substring(i,j);
+        for (int i = 0; i < str.length(); i++) {
+            for (int j = str.length() - 1; j > i; j--) {
+                String s = str.substring(i, j);
                 //判断当前截取的字符串是否为回文，是则返回
-                if(isPalindrome2(s)&&(j-i+1)>max){
-                    max=j-i+1;
+                if (isPalindrome2(s) && (j - i + 1) > max) {
+                    max = j - i + 1;
                     newPalindrome = s;
                 }
             }
@@ -102,6 +101,5 @@ public class testMain {
 
         return newPalindrome;
     }
-
 
 }

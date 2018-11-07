@@ -10,9 +10,9 @@ import java.util.concurrent.locks.ReentrantLock;
  * @description
  * @date 2018/6/28
  */
-public  class TwoThread {
+public class TwoThread {
 
-    private  int start = 1;
+    private int start = 1;
 
     private boolean flag = false;
 
@@ -25,27 +25,24 @@ public  class TwoThread {
         t1.setName("t1");
     }*/
 
-
     /**
      *
      */
-    public  class OuNum  implements Runnable{
+    public class OuNum implements Runnable {
 
         private TwoThread number;
 
-        public OuNum(TwoThread number){
+        public OuNum(TwoThread number) {
             this.number = number;
         }
 
         @Override
         public void run() {
-            while(number.start<=100){
+            while (number.start <= 100) {
 
             }
         }
     }
-
-
 
 }
 
